@@ -1,32 +1,36 @@
-import lesson1.ArraysConvert;
-import lesson1.ArraysExample;
-import lesson1.HelloWorld;
+
+
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int numb = ArraysConvert.inputLines();
-        String[] array = ArraysConvert.inputArray(numb);
-        ArraysConvert.convertArray(array);
-        ArraysConvert.printArray(array);
+        System.out.println("Enter please number of lines");
+        Scanner inputScanner = new Scanner(System.in);
+        int fromScanner = inputScanner.nextInt();
+        String[] inputArray = new String[fromScanner];
+        for (int i = 0; i < fromScanner + 1; i++){
+            System.out.println("Enter please any text");
+           inputArray[i] = inputScanner.nextLine();
+
+
+        }
+
     }
 }
 
-/*
-будем считывать сканнером.
-в сканнер подаются:
-сначала число N,
-потом строки, количеством N.
-нужно считать строки в массив.
-каждую чётную строку - заменить на двойки по количеству символов в строке
-каждую нечётную - на единицы
-то есть
-вход:
-3
-аба
-сттт
-каддд
 
-выход:
-222
-1111
-22222
+/*
+1. Считываем коливество строк
+2. объявляем массив длинной n строк
+3. циклом аписываем массив
+4 цикл проверка чет нечет
+
+ */
+
+
+
+
+
+/*int counter = 3;
+        HelloWorld.printFromInput(counter);
+
  */
