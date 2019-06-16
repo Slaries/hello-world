@@ -21,16 +21,16 @@ public class ArraysConvert {
     }
     public static String[] convertArray(String[] arrays) {
         for (int a = 0; a < arrays.length; a++) { // перебор всех строк
-            int x = arrays[a].length();
+            int length = arrays[a].length();
     if ((a % 2) == 0) { //проверка строки на четность
         arrays[a] = ""; // если четное присваиваем значение 2
-                for (int b = 0; b < x; b++){ //повторяем присвоение пока счетчик меньше длины строки
+                for (int j = 0; j < length; j++){ //повторяем присвоение пока счетчик меньше длины строки
         arrays[a] = arrays[a] + "2";
                 }
             }
     else {
                 arrays[a] = ""; //если нечет, то присваиваем 1
-                for (int c = 0; c < x; c++){
+                for (int j = 0; j < length; j++){
                     arrays[a] = arrays[a] + "1";
             }
         }
