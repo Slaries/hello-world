@@ -1,15 +1,17 @@
+package lesson1;
 
+import sun.plugin2.message.MarkTaintedMessage;
 
-import lesson1.ArraysConvert;
-
-import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-      int number = ArraysConvert.inputLines();
-      String[] array = ArraysConvert.inputArray(number);
-      ArraysConvert.convertArray(array);
-      ArraysConvert.printArray(array);
-
+        Info info1 = new Animal(1);
+        Info info2 = new Person("Mark");
+    info1.showInfo();
+    info2.showInfo();
+        }
+    public static void oututInfo(Info info){
+    info.showInfo();
     }
+
 }
 
